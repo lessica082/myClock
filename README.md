@@ -13,6 +13,7 @@ A single-page world-clock web app application similar to iOS world-clock
 
 #The World-Clock Page
 - Cities was stored into local storage of ember data
+https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/world-clock.png
 - Click 'Edit' to delete city
 - Click '+' to search city and add it to the cityList
 
