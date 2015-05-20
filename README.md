@@ -14,16 +14,16 @@ A single-page world-clock web app application similar to iOS world-clock
 #The World-Clock Page
 - Cities was stored into local storage of ember data<br>
 ![ScreenShot](https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/world-clock.png)
-- Click 'Edit' to delete city
+- Click 'Edit' to delete city<br>
 ![ScreenShot](https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/delete.png)
-- Click '+' to search city and add it to the cityList
+- Click '+' to search city and add it to the cityList<br>
 ![ScreenShot](https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/add.png)
 
 #Timer Page
-![ScreenShot](https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/timer1.png)
-![ScreenShot](https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/timer2.png)
+![ScreenShot](https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/timer1.png)<br>
+![ScreenShot](https://raw.githubusercontent.com/lessica082/myClock/master/DemoImg/timer2.png)<br>
 #Stop-Watch Page
-- Click 'start' to start a stop-watch, click lap to record a timestamp
+- Click 'start' to start a stop-watch, click lap to record a timestamp<br>
 ![ScreenShot](https://github.com/lessica082/myClock/blob/master/DemoImg/stop1.png)
-- Click 'stop; to pause stop-watch
+- Click 'stop; to pause stop-watch<br>
 ![ScreenShot](https://github.com/lessica082/myClock/blob/master/DemoImg/stop2.png)
