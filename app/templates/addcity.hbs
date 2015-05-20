@@ -1,0 +1,22 @@
+<div id="addcity">
+	<header>
+		<h3>Choose a City:</h3>
+		{{input type="text" id="search" value=keyword }}
+		<lable {{action 'cancel'}} >Cancel</lable>
+	</header>
+	<div id="citylist">
+		
+		{{#if noResult}}
+			<div class='typeNote'>{{typeNote}}</div>
+		{{/if}}
+
+		{{#each cityList}}
+			<ul>
+				<p>{{capital}}</p>
+				{{#each list}}
+					<li {{action 'addToList' this}} >{{cityName}}</li>
+				{{/each}}
+			<ul>
+		{{/each}}			
+	</div>
+</div>

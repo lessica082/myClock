@@ -1,0 +1,25 @@
+<div id="timer">
+  <header>
+    <h1>Timer</h1>
+  </header>
+  <div class="timer-content">
+    <div class="counter" {{bind-attr style=counterDisplay}}>
+      <p class="total-time">{{totalTime}}</p>
+    </div>
+    <div class="inputs" {{bind-attr style=inputDisplay}}>
+      <input class="hours" type="number" name="hours" max="100" min="0" value="0"/>
+      <input class="minutes" type="number" name="minutes" max="59" min="0" value="0"/>
+    </div>
+    <div class="buttons">
+      <button {{bind-attr class="leftButtonClass :left-button"}} {{action 'handleLeftButton'}}>{{leftButtonVal}}</button>
+      <button {{bind-attr class="rightButtonClass disabled :right-button"}} {{action 'handleRightButton'}}>{{rightButtonVal}}</button>
+    </div>
+  </div>
+</div>
+<footer>
+  <ul>
+    <li>{{#link-to 'worldclock' id="worldclock-link"}}<span>&#9992;</span><br/>World Clock{{/link-to}}</li>
+    <li>{{#link-to 'timer' id="timer-link"}}<span>&#9716;</span><br/>Timer{{/link-to}}</li> 
+    <li>{{#link-to 'stopwatch' id="stopwatch-link"}}<span>&#9719;</span><br/>Stopwatch{{/link-to}}</li>
+  </ul>
+</footer>

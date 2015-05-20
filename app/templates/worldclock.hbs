@@ -1,0 +1,32 @@
+<div id="worldclock">
+  <header>
+    <h1>
+      <span {{action 'setStatus'}}>{{EditorDone}}</span>
+      World Clock
+      {{#link-to 'addcity'}}+{{/link-to}} 
+    </h1>
+  </header>
+  <ul class="worldclock-list">
+	  {{#each data}}
+	  	<li {{bind-attr class="controller.isEditing:is-edit"}}>
+	  		{{#if controller.isEditing}}
+	  			<img class='delete-icon' src="./assets/icon.jpg" {{action 'deleteCity' this}}></img>
+	  		{{/if}}
+	  		<p class="city" >{{cityName}}</p>	
+	  		<p {{bind-attr class=":time controller.hideTime"}}>{{localTime}}</p>
+	  		<p class="time-details">
+	  			<strong>{{day}}</strong>
+	  			<span>{{hours}}</span>
+	  		</p>  		
+	  	</li>
+	  {{/each}}
+	  </ul>
+</div>
+
+<footer>
+	<ul>
+		<li>{{#link-to 'worldclock' id="worldclock-link"}}<span>&#9992;</span><br/>World Clock{{/link-to}}</li>
+		<li>{{#link-to 'timer' id="timer-link"}}<span>&#9716;</span><br/>Timer{{/link-to}}</li>	
+		<li>{{#link-to 'stopwatch' id="stopwatch-link"}}<span>&#9719;</span><br/>Stopwatch{{/link-to}}</li>
+	</ul>
+</footer>

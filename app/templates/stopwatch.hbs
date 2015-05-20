@@ -1,0 +1,31 @@
+<div id="stopwatch">
+  <header>
+    <h1>Stopwatch</h1>
+  </header>
+  
+  <div class="stopwatch-content">
+    <div class="counter">
+      <p class="lap-time">{{showlap}}</p>
+      <p class="total-time">{{showtotal}}</p>
+    </div>
+    <div class="buttons">
+      <button {{bind-attr class="leftButtonClass  :left-button"}} {{action 'handleLeftButton'}}>{{leftButtonVal}}</button>
+      <button {{bind-attr class="rightButtonClass :right-button  disabled"}} {{action 'handleRightButton'}}>{{rightButtonVal}}</button>
+    </div>
+    <ul class="laps">
+      {{#each item in laplist}}
+        <li>
+          <p class="lap-label">Lap {{item.id}}</p>
+          <p class="lap-time">{{item.timepoint}}</p>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+<footer>
+  <ul>
+    <li>{{#link-to 'worldclock' id="worldclock-link"}}<span>&#9992;</span><br/>World Clock{{/link-to}}</li>
+    <li>{{#link-to 'timer' id="timer-link"}}<span>&#9716;</span><br/>Timer{{/link-to}}</li> 
+    <li>{{#link-to 'stopwatch' id="stopwatch-link"}}<span>&#9719;</span><br/>Stopwatch{{/link-to}}</li>
+  </ul>
+</footer>
